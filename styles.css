@@ -1,0 +1,29 @@
+/* Mobile first design */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#screen {
+  min-height: 10rem;
+  width: 90%;
+  background-color: aqua;
+  margin: 2rem auto 0;
+  border: 2px solid #000;
+  text-align: center;
+  padding: 4rem;
+}
+
+#buttons {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.btn {
+  width: 5rem;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 100%;
+  border: 1px solid #000;
+}
