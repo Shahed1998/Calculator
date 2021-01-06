@@ -35,3 +35,88 @@
 .btnComp {
   background-color: #ffb26b;
 }
+
+/* 350px+ */
+@media only screen and (min-width: 350px) {
+  #calcBody {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .btn,
+  .btnComp {
+    margin-left: 15px;
+  }
+}
+/* 400px+ */
+@media only screen and (min-width: 400px) {
+  * {
+    font-size: 106%;
+  }
+
+  #calcBody {
+    width: 90%;
+  }
+  .btn,
+  .btnComp {
+    margin-left: 15px;
+  }
+}
+/* 500px+ */
+@media only screen and (min-width: 500px) {
+  * {
+    font-size: 105%;
+  }
+
+  .btn,
+  .btnComp {
+    margin-left: 16px;
+    width: 7rem;
+  }
+}
+/* 700px+ */
+@media only screen and (min-width: 700px) {
+  * {
+    font-size: 120%;
+  }
+  #screen {
+    min-height: 20rem;
+    padding-top: 8rem;
+  }
+  .btn,
+  .btnComp {
+    width: 8rem;
+    padding: 15px;
+    margin-left: 36px;
+  }
+}
+/* 1000px+ */
+@media only screen and (min-width: 1000px) {
+  * {
+    font-size: 125%;
+  }
+  #calcBody {
+    width: 80%;
+  }
+  .btn,
+  .btnComp {
+    width: 9rem;
+  }
+}
+/* 1200px+ */
+@media only screen and (min-width: 1200px) {
+  * {
+    font-size: 100%;
+  }
+  #calcBody {
+    width: 40%;
+  }
+  #screen {
+    min-height: 10rem;
+    padding-top: 4rem;
+  }
+  .btn,
+  .btnComp {
+    width: 7rem;
+    margin-left: 30px;
+  }
+}
