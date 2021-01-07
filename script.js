@@ -32,5 +32,6 @@ deleteBtn.addEventListener('click', function () {
 
 // Result
 res.addEventListener('click', function () {
-  screenShow.textContent = math.evaluate(str);
+  str = String(math.evaluate(str));
+  screenShow.textContent = str;
 });
