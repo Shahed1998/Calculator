@@ -33,5 +33,6 @@ deleteBtn.addEventListener('click', function () {
 // Result
 res.addEventListener('click', function () {
   str = String(math.evaluate(str));
+  str = str!=='undefined'?str:'';
   screenShow.textContent = str;
 });
