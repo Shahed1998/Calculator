@@ -1,5 +1,6 @@
 'use strict';
 let str = '';
+let num = 0;
 const nodeList = document.querySelectorAll('.btn');
 const screenShow = document.querySelector('#screen');
 const reset = document.querySelector('#reset');
@@ -13,14 +14,12 @@ for (const [i, val] of nodeList.entries()) {
     str += nodeList[i].textContent;
     str = str.length < 20 ? str : '';
     screenShow.textContent = str;
-    // console.log(str);
   });
 }
 
 // Reset Button
 reset.addEventListener('click', function () {
   str = '';
-  // console.log(str);
   screenShow.textContent = str;
 });
 
@@ -33,9 +32,5 @@ deleteBtn.addEventListener('click', function () {
 
 // Result
 res.addEventListener('click', function () {
-  // console.log(eval(str));
-  str = String(eval(str));
-  console.log(str);
-  str = str !== 'undefined' ? str : '';
-  screenShow.textContent = str;
+  console.log(math.evaluate(str));
 });
